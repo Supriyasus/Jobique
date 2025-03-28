@@ -46,9 +46,9 @@ uploads/
 Thumbs.db              
 # Windows thumbnail cache
 
-# Ignore Tailwind-specific files (if generated)
-*.css                  
-# If you have generated CSS files you don't want to commit
+# Ignore Tailwind-specific files (generated CSS files)
+frontend/output.css    
+# Ignore generated CSS files (output from Tailwind build process)
 
 # Ignore package-lock.json if you're not using it (depends on your workflow)
 package-lock.json      

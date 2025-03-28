@@ -1,0 +1,65 @@
+
+body {
+    background-color: #0c004196;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Container Styling */
+.container {
+    background-color: rgba(255, 252, 193, 0.949);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Section Styling */
+.section {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Heading Styles */
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Output Box Styling */
+.output-box {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9fafb;
+    min-height: 150px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+/* Back Link Styling */
+.back-link {
+    display: block;
+    margin-top: 16px;
+    color: #3b82f6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}

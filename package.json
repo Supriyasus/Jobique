@@ -8,9 +8,9 @@
   "version": "1.0.0",
   "main": "postcss.config.js",
   "scripts": {
-  "build:css": "tailwindcss -i ./frontend/src/input.css -o ./frontend/output.css",
-  "watch:css": "tailwindcss -i ./frontend/src/input.css -o ./frontend/output.css --watch"
-},
+    "build:css": "tailwindcss -i ./frontend/src/input.css -o ./frontend/output.css",
+    "watch:css": "tailwindcss -i ./frontend/src/input.css -o ./frontend/output.css --watch"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

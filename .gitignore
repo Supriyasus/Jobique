@@ -1,0 +1,67 @@
+# Ignore virtual environment folders
+cemail/                
+# If this is your virtual environment
+
+# Ignore node modules
+node_modules/          
+# Node.js dependencies
+
+# Ignore Python bytecode
+__pycache__/           
+# Python bytecode cache
+*.pyc                  
+# Python compiled files
+
+# Ignore build and distribution folders
+dist/                  
+# Distribution files
+
+# Ignore uploads folder if it contains user-uploaded files
+uploads/               
+# If this folder is used for temporary uploads
+
+# Ignore .env files (sensitive data such as API keys, tokens)
+.env                   
+# .env file for storing environment variables
+
+# Ignore IDE-specific files
+.idea/                 
+# PyCharm project files
+.vscode/               
+# VS Code project files
+
+# Ignore log files
+*.log                  
+# Log files (e.g., server logs)
+
+# Ignore temporary files
+*.swp                  
+# Swap files created by editors (e.g., vim)
+*.bak                  
+# Backup files created by editors
+
+# Ignore OS-specific files
+.DS_Store              
+# macOS Finder file
+Thumbs.db              
+# Windows thumbnail cache
+
+# Ignore Tailwind-specific files (if generated)
+*.css                  
+# If you have generated CSS files you don't want to commit
+
+# Ignore package-lock.json if you're not using it (depends on your workflow)
+package-lock.json      
+# Package-lock file, if not using in the repository (optional)
+
+# Ignore Python dependencies file
+*.egg-info/            
+# Metadata from installed Python packages (egg-info folder)
+
+# Ignore test data and files
+*.tmp                  
+# Temporary files generated during tests
+
+# Ignore any other environment-specific configuration files
+.env.*                 
+# If you have multiple .env files for different environments

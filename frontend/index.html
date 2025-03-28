@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cold Email & Cover Letter Generator</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-blue-500 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-lg">
+        <h2 class="text-xl font-semibold mb-4 text-center">Generate Your Cold Email & Cover Letter</h2>
+        
+        <div class="space-y-4">
+            <div>
+                <label class="block font-medium">Job Link:</label>
+                <input type="text" id="jobLink" class="w-full p-2 border rounded focus:ring focus:ring-blue-300" placeholder="Enter job posting link">
+            </div>
+
+            <div>
+                <label class="block font-medium">Upload Resume (PDF):</label>
+                <input type="file" id="resumeInput" accept=".pdf" class="w-full p-2 border rounded cursor-pointer">
+            </div>
+
+            <div>
+                <label class="block font-medium">Additional Information (Optional):</label>
+                <textarea id="additionalInfo" class="w-full p-2 border rounded focus:ring focus:ring-blue-300" placeholder="Enter any additional info"></textarea>
+            </div>
+
+            <button id="generateBtn" class="bg-blue-500 text-white py-2 px-4 rounded w-full flex items-center justify-center gap-2 hover:bg-blue-600 transition">
+                <span id="btnText">Generate</span>
+                <svg id="loadingIcon" class="hidden w-5 h-5 animate-spin text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -72,18 +72,16 @@ Compile the Tailwind CSS before running the application:
 npm run build:css
 ```
 
-#### Optional: Watch Tailwind CSS
-If you're actively working on frontend development, you can keep the CSS build process running in the background:
-```bash
-npm run watch:css
-```
-
 ## Running the Application
 
 ### Start Backend Server
 In the root project directory, run:
 ```bash
 python -m backend.app
+```
+or run using the following command
+```bash
+flask --app backend.app run --reload
 ```
 This will start the Flask server, accessible at `http://localhost:5000`.
 

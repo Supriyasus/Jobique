@@ -5,7 +5,7 @@ import os
 load_dotenv()
 
 # Get the access token from the environment variable
-API_KEY = os.getenv("ACCESS_TOKEN")
+API_KEY = os.getenv("GOOGLE_API_KEY")
 genai.configure(api_key=API_KEY)
 
 def generate_text(prompt):

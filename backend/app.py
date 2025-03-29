@@ -8,9 +8,15 @@ from backend.genai_utils import generate_email_and_cover_letter  # Updated impor
 app = Flask(__name__, static_folder='../frontend', static_url_path='')
 CORS(app)
 
-# Configure upload folder
-app.config['UPLOAD_FOLDER'] = os.path.join(os.getcwd(), 'uploads')
-os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)  # Ensure uploads folder exists
+# Check if the app is running on Render or locally
+if os.environ.get('RENDER') == 'true':
+    # Render environment
+    app.config['UPLOAD_FOLDER'] = '/tmp/uploads'  # Use temporary directory in Render
+else:
+    # Local development environment
+    app.config['UPLOAD_FOLDER'] = os.path.join(os.getcwd(), 'uploads')
+
+os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)  # Ensure the folder exists
 
 @app.route("/")
 def serve_index():

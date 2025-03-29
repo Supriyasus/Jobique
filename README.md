@@ -1,6 +1,8 @@
-# Cold Email & Cover Letter Generator
+# Jobique: Cold Email & Cover Letter Generator
 
-This is a web application that helps job seekers generate personalized cold emails and cover letters using AI technology. The application uses Flask for the backend, Google Gemini API for content generation, and Tailwind CSS for frontend styling.
+This is a web application that helps job seekers generate personalized cold emails and cover letters using AI technology. The application uses Flask for the backend, Google Gemini API for content generation, and Tailwind CSS for frontend styling. It is further deployed on Render.
+
+You can access it here: [Jobique](https://jobique.onrender.com)
 
 ## Features
 - **Upload job posting link**: Allows users to input a job posting URL.
@@ -101,9 +103,10 @@ You should now see the application running locally!
 ## Configuration
 
 ### Tailwind CSS Configuration
-- **Configuration file**: `frontend/tailwind.config.js`
+- **Configuration file**: `tailwind.config.js`
 - **Input CSS file**: `frontend/src/input.css`
 - **Output CSS file**: `frontend/output.css`
+- **PostCSS file**:`postcss.config.js`
 
 ### Backend Configuration
 - **Main application file**: `backend/app.py`
